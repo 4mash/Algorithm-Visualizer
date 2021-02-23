@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Algorithm Visualizer</title>
+</head>
+<body style = "font-family:'Segoe UI Light', monospace;">
+<h2 class = "title-container">Algorithm Visualizer</h2>
+<div>
+    <h4 class = "shift-margin">Select number of elements with "Size" and then press "Shuffle" to randomize the array. <label style="color: red">VERY HIGH VALUES WILL CRASH THE PROCESS!</label></h4>
+    <h4 class = "shift-margin">You can choose your preferred algorithm with "Algorithm", as well as the speed of the animation with the "Speed" slider.</h4>
+    <h4 class = "shift-margin">After you've selected your options, you can press "Sort!" to start the operation. You can stop the process whenever you want with "Stop".</h4>
+    <div class = canvas-container>
+        <canvas id = "canvas" width="auto" height="auto" class = "canvas-style"></canvas>
+    </div>
+    <em id = "compute-time"></em>
+    <br>
+    <br>
+    <label for = "elements">Size: <input id = "elements" value = "100">
+    <button id = "shuffle">Shuffle</button>
+    <br>
+    <label for="algorithm">Algorithm: <select id = "algorithm">
+        <option value="0" selected>Selection Sort</option>
+        <option value="1">Optimized Selection Sort</option>
+        <option value="2">Insertion Sort</option>
+        <option value="3">Quick Sort</option>
+        <option value="4">Bubble Sort</option>
+        <option value="5">Counting Sort</option>
+    </select>
+        <label for="speed">Speed: <input type="range" min="1" max="199" value="199" class="slider" id="speed">
+    <button id = "sort">Sort!</button>
+    <button id = "stop">Stop</button>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
