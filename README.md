@@ -1,4 +1,4 @@
-# Algorithm-Visualizer
+# Algorithm Visualizer
 A simple and intuitive web app that gives a visual represantation of how various sorting algorithms function. The user can select between all major algorithms and watch how it sorts the array.
 
 # How to run
